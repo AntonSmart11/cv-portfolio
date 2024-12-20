@@ -9,7 +9,9 @@
         <p class="mt-3">Desarrollador Full Stack 💻</p>
       </div>
 
-      <a href="/cv.pdf" download="" class="btn-cv barlow-bold">Descargar CV</a>
+      <a href="/cv-portfolio/cv.pdf" download="" class="btn-cv barlow-bold"
+        >Descargar CV</a
+      >
     </div>
   </div>
 </template>
