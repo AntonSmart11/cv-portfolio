@@ -1,0 +1,68 @@
+.barlow-regular {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.barlow-medium {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.barlow-semibold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.barlow-bold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.barlow-extrabold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.barlow-black {
+  font-family: "Barlow", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  background-color: #1B1B1B !important;
+}
+
+h1, p, a, span {
+  color: white !important;
+  font-family: "Barlow", sans-serif;
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  font-size: 1.1rem;
+}
+
+.line-down {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.line-down::after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  bottom: -10px;
+  width: 50%;
+  height: 3px;
+  background-color: #674cde;
+}
