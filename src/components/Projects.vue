@@ -32,7 +32,7 @@
                 :class="{ active: index === 0 }"
               >
                 <img
-                  :src="`./projects/${project.code}/${image}.png`"
+                  :src="`/cv-portfolio/projects/${project.code}/${image}.png`"
                   :alt="image"
                   class="d-block w-100 img-fluid"
                   loading="lazy"
