@@ -1,6 +1,6 @@
 <template>
   <div class="container text-center">
-    <h1 class="mt-4 barlow-bold line-down">Proyectos</h1>
+    <h1 class="mt-4 barlow-bold line-down">{{ $t("projects") }}</h1>
 
     <div v-for="(project, index) in projects" :key="index" class="my-5">
       <div class="row">

@@ -16,6 +16,7 @@ const messages = {
       "I am a creative, committed, self-taught, and responsible person when it comes to projects.",
     services: "Services",
     tools: "Tools",
+    projects: "Projects",
     project_pikachu:
       "A database manager with a Pikachu theme for local MySQL features basic functions and allows the creation of databases, tables, columns, primary keys, and foreign keys.",
     project_quiper:
@@ -44,6 +45,7 @@ const messages = {
       "Soy una persona creativa, comprometida, autodidacta y responsable dentro de los proyectos.",
     services: "Servicios",
     tools: "Herramientas",
+    projects: "Proyectos",
     project_pikachu:
       "Manejador de base de datos con temática de Pikachu para MySQL local con funciones básicas. Permite crear bases de datos, tablas, columnas, llaves primarias y foráneas.",
     project_quiper:
