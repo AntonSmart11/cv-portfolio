@@ -1,6 +1,6 @@
 <template>
   <div class="container text-center">
-    <h1 class="mt-4 barlow-bold line-down">Sobre mí</h1>
+    <h1 class="mt-4 barlow-bold line-down">{{ $t("about") }}</h1>
 
     <div class="row mt-4 d-flex justify-content-center align-items-center">
       <img
@@ -11,14 +11,11 @@
 
       <div class="col-12 col-md-6 text-start mx-5 mt-3 mt-md-0">
         <p>
-          Soy un apasionado de la industria tecnológica, me gusta crear
-          aplicaciones web o páginas web que brinden una experiencia buena para
-          el usuario.
+          {{ $t("description_first") }}
         </p>
 
         <p>
-          Soy una persona creativa, comprometida, autodidacta y responsable
-          dentro de los proyectos.
+          {{ $t("description_second") }}
         </p>
       </div>
     </div>
@@ -27,7 +24,7 @@
       <div
         v-for="(icon, index) in icons"
         :key="index"
-        class="col-6 d-flex flex-column align-items-center p-5"
+        class="col-12 col-md-6 d-flex flex-column align-items-center p-5"
       >
         <span class="material-symbols-outlined icon">{{ icon.name }}</span>
 
@@ -48,7 +45,12 @@
 </template>
 
 <script setup>
-const icons = [
+import { computed } from "vue";
+import { useI18n } from "vue-i18n";
+
+const { t } = useI18n();
+
+const icons = computed(() => [
   {
     name: "code",
     area: "Fronted",
@@ -59,13 +61,13 @@ const icons = [
     area: "Backed",
     technologies: ["PHP", "Laravel", "MySQL", "SQL Server", "Kotlin"],
   },
-  { name: "handyman", area: "Servicios", technologies: ["Firebase"] },
+  { name: "handyman", area: t("services"), technologies: ["Firebase"] },
   {
     name: "settings",
-    area: "Herramientas",
+    area: t("tools"),
     technologies: ["Github", "Postman", "Figma"],
   },
-];
+]);
 </script>
 
 <style scoped>
@@ -76,7 +78,7 @@ const icons = [
 }
 
 .icon {
-  font-size: 15rem;
+  font-size: 14rem;
 }
 
 .area {

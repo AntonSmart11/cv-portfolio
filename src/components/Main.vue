@@ -1,22 +1,40 @@
 <template>
   <div class="main">
+    <button class="btn-lang" @click="changeLanguage">
+      {{ $i18n.locale === "es" ? "EN" : "ES" }}
+    </button>
     <div
       class="container d-flex flex-column justify-content-center align-items-center gap-5"
     >
       <div class="text-center">
-        <p>Hola 👋, soy</p>
+        <p>{{ $t("greeting") }}</p>
         <h1 class="barlow-bold text-center">Antonio<br />Ovando</h1>
-        <p class="mt-3">Desarrollador Full Stack 💻</p>
+        <p class="mt-3">{{ $t("position") }} 💻</p>
       </div>
 
-      <a href="/cv-portfolio/cv.pdf" download="" class="btn-cv barlow-bold"
-        >Descargar CV</a
-      >
+      <a :href="cvDownloadLink" download="" class="btn-cv barlow-bold">{{
+        $t("download")
+      }}</a>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { computed } from "vue";
+import { useI18n } from "vue-i18n";
+
+const { t, locale } = useI18n();
+
+const cvDownloadLink = computed(() => {
+  return locale.value === "es"
+    ? "/cv-portfolio/cv_es.pdf"
+    : "/cv-portfolio/cv_en.pdf";
+});
+
+const changeLanguage = () => {
+  locale.value = locale.value === "es" ? "en" : "es";
+};
+</script>
 
 <style scoped>
 h1 {
@@ -69,5 +87,24 @@ p {
 .btn-cv:hover {
   transform: scale(1.05);
   font-size: 1.02rem;
+}
+
+.btn-lang {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-lang:hover {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 </style>

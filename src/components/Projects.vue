@@ -121,14 +121,16 @@
 
 <script setup>
 import { Carousel } from "bootstrap";
-import { onMounted } from "vue";
+import { onMounted, computed } from "vue";
+import { useI18n } from "vue-i18n";
 
-const projects = [
+const { t } = useI18n();
+
+const projects = computed(() => [
   {
     name: "Pikachu DBMS",
     code: "pikachudbms",
-    description:
-      "Manejador de base de datos con temática de Pikachu para MySQL local con funciones básicas. Permite crear bases de datos, tablas, columnas, llaves primarias y foráneas.",
+    description: t("project_pikachu"),
     github: "https://github.com/AntonSmart11/pikachuDBMS",
     technologies: "PHP, JavaScript",
     images: [
@@ -148,8 +150,7 @@ const projects = [
   {
     name: "Quiper",
     code: "quiper",
-    description:
-      "Página web estática promocionando una tienda de computadoras. Contiene efectos realizados con JavaScript.",
+    description: t("project_quiper"),
     github: "https://github.com/AntonSmart11/quiper",
     technologies: "HTML, CSS, JavaScript",
     images: ["index", "footer", "image_left", "image_right"],
@@ -157,8 +158,7 @@ const projects = [
   {
     name: "Doppia",
     code: "doppia",
-    description:
-      "Applicación web para procedimientos contables, se migró de la versión de Vue 2 a Vue 3. (Solo se muestra la pantalla inicial por discreción.)",
+    description: t("project_doppia"),
     github: "no",
     technologies: "Vue 3",
     images: ["dashboard"],
@@ -166,8 +166,7 @@ const projects = [
   {
     name: "OP Tabasco",
     code: "optabasco",
-    description:
-      "Aplicación móvil para reportes gubernamentales para el estado de Tabasco para dispositivos Android, realizado con Kotlin.",
+    description: t("project_optabasco"),
     github: "https://github.com/AntonSmart11/OPTabasco",
     technologies: "Kotlin, Jetpack Compose, SQLite, Firebase",
     images: [
@@ -189,8 +188,7 @@ const projects = [
   {
     name: "MoviePlus",
     code: "movieplus",
-    description:
-      "Página web que consulta un API de películas, recolecta la información más recientes de estas, trayendo su título, descripción y trailers de YouTube.",
+    description: t("project_movieplus"),
     github: "no",
     technologies: "HTML 5, CSS, JavaScript, API",
     images: ["index", "search", "video"],
@@ -198,13 +196,12 @@ const projects = [
   {
     name: "ProTrack",
     code: "protrack",
-    description:
-      "Aplicación web que permite dar el siguimiento a un proyecto, registrando tareas y notas, lleva el control del porcentaje realizado y asigna un vinculo entre persona-tarea.",
+    description: t("project_protrack"),
     github: "https://github.com/AntonSmart11/ProTrack",
     technologies: "Kotlin, Jetpack Compose, SQLite, Firebase",
     images: ["dashboard", "projects", "project", "homework", "profile"],
   },
-];
+]);
 
 onMounted(() => {
   const carousels = document.querySelectorAll(".carousel");

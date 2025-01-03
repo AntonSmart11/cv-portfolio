@@ -1,14 +1,14 @@
 <template>
   <div class="container contact">
     <div class="text-center">
-      <h1 class="mt-4 barlow-bold line-down text-center">Contáctame</h1>
+      <h1 class="mt-4 barlow-bold line-down text-center">
+        {{ $t("contact") }}
+      </h1>
     </div>
 
     <div class="mt-3 information mx-auto">
       <p>
-        Si quieres contactarme puedes hacerlo a través de las redes sociales o
-        sobre el correo de contacto. Te responderé lo antes posible. ¡Gracias
-        por considerarme!😊
+        {{ $t("message_contact") }}
       </p>
 
       <div class="mt-5">
@@ -52,7 +52,7 @@
         </div>
       </div>
 
-      <p class="mt-5 text-center">¡Gracias por visitar mi sitio web! 😁</p>
+      <p class="mt-5 text-center">{{ $t("thanks") }}</p>
     </div>
   </div>
 </template>
