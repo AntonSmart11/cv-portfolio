@@ -53,19 +53,30 @@ const { t } = useI18n();
 const icons = computed(() => [
   {
     name: "code",
-    area: "Fronted",
-    technologies: ["HTML5", "CSS", "JavaScript", "VueJS"],
+    area: "Frontend",
+    technologies: ["HTML5", "CSS", "JavaScript", "VueJS", "AngularJS"],
   },
   {
     name: "database",
-    area: "Backed",
-    technologies: ["PHP", "Laravel", "MySQL", "SQL Server", "Kotlin"],
+    area: "Backend",
+    technologies: [
+      "PHP",
+      "Laravel",
+      "ExpressJS",
+      "MySQL",
+      "SQL Server",
+      "Kotlin",
+    ],
   },
-  { name: "handyman", area: t("services"), technologies: ["Firebase"] },
+  {
+    name: "handyman",
+    area: t("services"),
+    technologies: ["Firebase", "Amazon AWS"],
+  },
   {
     name: "settings",
     area: t("tools"),
-    technologies: ["Github", "Postman", "Figma"],
+    technologies: ["Github", "Postman", "Figma", "DBeaver"],
   },
 ]);
 </script>

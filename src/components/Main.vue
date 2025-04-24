@@ -27,8 +27,8 @@ const { t, locale } = useI18n();
 
 const cvDownloadLink = computed(() => {
   return locale.value === "es"
-    ? "/cv-portfolio/cv_es.pdf"
-    : "/cv-portfolio/cv_en.pdf";
+    ? "/cv-portfolio/Antonio_Ovando_Cauich_-_Desarrollador_Full_Stack (es).pdf"
+    : "/cv-portfolio/Antonio_Ovando_Cauich_-_Desarrollador_Full_Stack (en).pdf";
 });
 
 const changeLanguage = () => {

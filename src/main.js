@@ -29,6 +29,10 @@ const messages = {
       "A website that queries a movie API, collecting the most recent information, including title, description, and YouTube trailers.",
     project_protrack:
       "A web application that allows project tracking by registering tasks and notes monitors the completion percentage and assigns a link between individuals and tasks.",
+    project_javida:
+      "A static webpage for Grupo Javida, a company dedicated to industrial equipment maintenance, hydrostatic testing, and bolting services, with a form to send a message to an email address.",
+    project_dimaa:
+      "A web application designed for CBTIS that promotes student retention through personalized monitoring, early alerts for risk of dropout, accessible educational resources, and an effective communication system between students, teachers, and tutors.",
     contact: "Contact me",
     message_contact:
       "If you wish to contact me, you can do so through social media or via the contact email. I will respond as soon as possible. Thank you for considering me! 😊",
@@ -58,6 +62,10 @@ const messages = {
       "Página web que consulta un API de películas, recolecta la información más recientes de estas, trayendo su título, descripción y trailers de YouTube.",
     project_protrack:
       "Aplicación web que permite dar el siguimiento a un proyecto, registrando tareas y notas, lleva el control del porcentaje realizado y asigna un vinculo entre persona-tarea.",
+    project_javida:
+      "Página web estática del Grupo Javida, compañía dedicada al mantenimiento de equipos industriales, pruebas hidroestáticas y torqueo, con formulario para enviar mensaje a un correo electrónico.",
+    project_dimaa:
+      "Aplicación web diseñada para el CBTIS que promueve la retención estudiantil mediante seguimiento personalizado, alertas tempranas de riesgo de abandono, recursos educativos accesibles y un sistema de comunicación efectiva entre alumnos, docentes y tutores.",
     contact: "Contáctame",
     message_contact:
       "Si quieres contactarme puedes hacerlo a través de las redes sociales o sobre el correo de contacto. Te responderé lo antes posible. ¡Gracias por considerarme!😊",
@@ -66,7 +74,7 @@ const messages = {
 };
 
 const i18n = createI18n({
-  locale: "en",
+  locale: "es",
   messages,
 });
 

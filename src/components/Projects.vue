@@ -32,7 +32,7 @@
                 :class="{ active: index === 0 }"
               >
                 <img
-                  :src="`/cv-portfolio/projects/${project.code}/${image}.png`"
+                  :src="`/cv-portfolio/projects/${project.code}/${image}.webp`"
                   :alt="image"
                   class="d-block w-100 img-fluid"
                   loading="lazy"
@@ -128,6 +128,28 @@ const { t } = useI18n();
 
 const projects = computed(() => [
   {
+    name: "DIMAA",
+    code: "dimaa",
+    description: t("project_dimaa"),
+    github: "no",
+    technologies: "AngularJS, ExpressJS, MySQL, PrimeNG, Bootstrap",
+    images: [
+      "login",
+      "dashboard",
+      "profile",
+      "students_table",
+      "students_update",
+      "incidences_table",
+      "incidences_update",
+      "failed_table",
+      "failed_update",
+      "specialties_table",
+      "specialties_update",
+      "users_table",
+      "users_update",
+    ],
+  },
+  {
     name: "Pikachu DBMS",
     code: "pikachudbms",
     description: t("project_pikachu"),
@@ -145,6 +167,26 @@ const projects = computed(() => [
       "data",
       "insert",
       "sql",
+    ],
+  },
+  {
+    name: "Javida",
+    code: "javida",
+    description: t("project_javida"),
+    github: "no",
+    technologies: "VueJS, PHP",
+    images: [
+      "main_portrait",
+      "main_services",
+      "main_about",
+      "main_clients",
+      "about_description",
+      "about_values",
+      "services_maintenance",
+      "services_tests",
+      "services_torque",
+      "clients",
+      "contact",
     ],
   },
   {
@@ -184,14 +226,6 @@ const projects = computed(() => [
       "delete_account",
       "report",
     ],
-  },
-  {
-    name: "MoviePlus",
-    code: "movieplus",
-    description: t("project_movieplus"),
-    github: "no",
-    technologies: "HTML 5, CSS, JavaScript, API",
-    images: ["index", "search", "video"],
   },
   {
     name: "ProTrack",
