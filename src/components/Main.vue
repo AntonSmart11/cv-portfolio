@@ -1,8 +1,8 @@
 <template>
   <div class="main">
-    <button class="btn-lang" @click="changeLanguage">
+    <!-- <button class="btn-lang" @click="changeLanguage">
       {{ $i18n.locale === "es" ? "EN" : "ES" }}
-    </button>
+    </button> -->
     <div
       class="container d-flex flex-column justify-content-center align-items-center gap-5"
     >

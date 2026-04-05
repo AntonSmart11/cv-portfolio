@@ -44,9 +44,9 @@ const messages = {
     download: "Descargar CV",
     about: "Sobre mí",
     description_first:
-      "Soy un apasionado de la industria tecnológica, me gusta crear aplicaciones web o páginas web que brinden una experiencia buena para el usuario.",
+      "Soy Ingeniero en Desarrollo y Gestión de Software 💻 especializado en desarrollo web. Cuento con una sólida experiencia en la creación y despliegue de aplicaciones, manejando tecnologías front-end como HTML, CSS, JavaScript, Vue.js y React.js 🚀, y back-end con PHP, Kotlin y Express.js. Domino la gestión de bases de datos SQL (MySQL, MariaDB, PostgreSQL, SQL Server), lo que me permite diseñar y construir soluciones web robustas de principio a fin.",
     description_second:
-      "Soy una persona creativa, comprometida, autodidacta y responsable dentro de los proyectos.",
+      "Me considero una persona proactiva, creativa ✨ y con una fuerte capacidad para el trabajo en equipo, siempre buscando optimizar procesos y colaborar eficazmente en la asignación de tareas para alcanzar los objetivos del proyecto. 💪",
     services: "Servicios",
     tools: "Herramientas",
     projects: "Proyectos",

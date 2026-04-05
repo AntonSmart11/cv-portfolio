@@ -54,7 +54,15 @@ const icons = computed(() => [
   {
     name: "code",
     area: "Frontend",
-    technologies: ["HTML5", "CSS", "JavaScript", "VueJS", "AngularJS"],
+    technologies: [
+      "HTML5",
+      "CSS",
+      "JavaScript",
+      "VueJS",
+      "Angular",
+      "Bootstrap",
+      "Tailwind CSS",
+    ],
   },
   {
     name: "database",
@@ -71,7 +79,7 @@ const icons = computed(() => [
   {
     name: "handyman",
     area: t("services"),
-    technologies: ["Firebase", "Amazon AWS"],
+    technologies: ["Firebase", "Amazon AWS", "Linux Hosting (Hostinger)"],
   },
   {
     name: "settings",
